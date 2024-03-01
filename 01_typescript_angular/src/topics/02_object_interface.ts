@@ -1,5 +1,5 @@
 
-const skills:string[] =['Bash','Counter','Healing'];
+const skills:string[] =['Bash','Counter','Healing'];// aqui se define un arreglo de tipo texto
 
 interface Character{
     name:string;

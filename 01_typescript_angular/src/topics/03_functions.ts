@@ -2,22 +2,21 @@
 function addNumbers(a:number,b:number):number {
     return a + b;
 }
-
+const result:number=addNumbers(1,2);
+//console.log(result);
+//******************************************************************************/
 const addNumbersArrow=(a:number,b:number):string=>{
     return`${a + b}`;
 }
-const result:number=addNumbers(1,2);
 const result2:string=addNumbersArrow(1,2);
-
-function multiply(x:number,y?:number,base:number=5):number{
-    return x * base ;
-
+//console.log(result2);
+//******************************************************************************/
+function multiply(firtsNumber:number,secondNumber?:number,base:number=5){
+    return((firtsNumber+secondNumber)*base);
 }
-const resultMultiply=multiply(3);
-// console.log(resultMultiply);
-// console.log(result);
-// console.log(result2);
-
+const multiplyResult=multiply(3,12);
+//console.log(multiplyResult);
+//******************************************************************************/
 
 interface Character{
     name:string;
@@ -30,7 +29,7 @@ const healCharacter=(character:Character, amount:number)=>{
 }
 const strider:Character={
     name:'Strider',
-    hp:50,
+    hp:150,
     showHp(){
         console.log(`puntos de vida ${this.hp}`);
     }
